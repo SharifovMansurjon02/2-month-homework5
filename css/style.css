@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    padding: 20px;
+    height: 1000px;
+}
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation-name: box_card;
+    animation-duration: 10s;
+    animation-iteration-count:infinite;
+}
+@keyframes box_card{
+    0%   {background-color:red; left:0px; top:0px;}
+    10%  {background-color:yellow; left:20%; top:0px;}
+   20%  {background-color:black; left:20%; top:20%;}
+  35%  {background-color:blue; left:50%; top:20%;}
+  43%{background-color: aqua;left: 50%;top:35%}
+  55%{background-color: blueviolet;left:35%;top: 35%;}
+  59%{background-color: pink;left: 35%;top: 30%;}
+  71%{background-color: gray;left: 20%;top:30%}
+  81%  {background-color:green; left:10%; top:25%;}
+  87%{background-color: lime;left: 0;top: 27%;}
+  100% {background-color:red; left:0px; top:0px;}
+}
